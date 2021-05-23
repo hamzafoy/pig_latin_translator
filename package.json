@@ -1,0 +1,24 @@
+{
+  "name": "Pig_Latin_Translator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "translator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hamzafoy/pig_latin_translator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hamzafoy/pig_latin_translator/issues"
+  },
+  "homepage": "https://github.com/hamzafoy/pig_latin_translator#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
