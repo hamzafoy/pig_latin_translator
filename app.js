@@ -14,7 +14,7 @@ app.use(routes);
 
 
 
-app.listen(3001, () => {
+app.listen(process.env.Port || 3000, () => {
     console.log('Let me pull the cord on this lawnmow- err- I mean Pig Latin Translator real quick!');
 });
 
