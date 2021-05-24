@@ -3,4 +3,9 @@ html(lang="en")
     head
         title Pig Latin Translator
     body 
-        h1 This is a Tsar Bomba-level test!
+        h1 Pig Latin Translator
+        form(action='/', method="post")
+            div 
+                label(for="tobetranslated")
+                input(type="text", name="tobetranslated" value=translation.body)
+            input(type="submit")
