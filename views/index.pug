@@ -4,8 +4,10 @@ html(lang="en")
         title Pig Latin Translator
     body 
         h1 Pig Latin Translator
+        if translation 
+            h3 #{translation}
         form(action='/', method="post")
             div 
                 label(for="tobetranslated")
-                input(type="text", name="tobetranslated" value=translation.body)
+                input(type="text", name="tobetranslated")
             input(type="submit")

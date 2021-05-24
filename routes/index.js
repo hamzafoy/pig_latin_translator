@@ -13,15 +13,16 @@ function asyncHandler(cb) {
 }
 
 router.get('/', asyncHandler(async(req, res) => {
-    res.render('index', { translation: {} });
+    res.render('index');
 }));
 
 router.post('/', asyncHandler(async(req, res) => {
     try {
-        let textToTranslate = req.body;
-        let translatedText = igpayAtinlay(textToTranslate.tobetranslated);
+        let textToTranslate = req.body.tobetranslated;
+        console.log(textToTranslate);
+        let translatedText = igpayAtinlay(textToTranslate);
         console.log(translatedText);
-        res.redirect('/');
+        res.render('index', { translation: translatedText})
     } catch (error) {
         throw error;
     }
