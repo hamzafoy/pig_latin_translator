@@ -5,11 +5,12 @@ html(lang="en")
         link(rel='stylesheet', href='/static/stylesheets/style.css')
     body
         div#inner_container
-            h1 Pig Latin Translator
-            if translation 
-                h1 #{translation}
+            h1 Porcus Verto
+            h3 Pig Latin Translator
             form(action='/', method="post")
-                div 
+                div#typetotranslate
                     label(for="tobetranslated")
                     input(type="text", name="tobetranslated")
                 input.submit(type="submit")
+            if translation 
+                h2.transl Translation: #{translation}

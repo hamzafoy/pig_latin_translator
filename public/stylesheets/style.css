@@ -1,3 +1,6 @@
+@font-face {font-family: "GochiHand-Regular"; src: url("../fonts/GochiHand-Regular.ttf"); }
+@font-face {font-family: "ScopeOne-Regular"; src: url("../fonts/ScopeOne-Regular.ttf"); }
+
 body, html {
     margin: 0;
     padding: 0;
@@ -14,15 +17,33 @@ body {
 
 #inner_container {
     background-color: #4a1c40;
-    padding: 200px 375px;
+    padding: 100px 225px;
     border-radius: 33% 5%;
 }
 
 #inner_container h1 {
-    color: #f6e5e9;
+    color: #fbf4f6;
+    font-family: GochiHand-Regular;
+    font-size: 44px;
+}
+
+#inner_container h3 {
+    color: #fbf4f6;
+    font-family: GochiHand-Regular;
+    font-size: 24px;
+}
+
+#typetotranslate {
+    display: inline-block;
 }
   
 .submit {
-    background-color: blue;
-    color: white;
+    background-color: #962d2d;
+    color: #fbf4f6;
+}
+
+.transl {
+    font-size: 18px;
+    color: #fbf4f6;
+    font-family: ScopeOne-Regular;
 }
