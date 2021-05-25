@@ -19,6 +19,7 @@ body {
     background-color: #4a1c40;
     padding: 100px 225px;
     border-radius: 33% 5%;
+    display: flex;
 }
 
 #inner_container h1 {
@@ -31,6 +32,12 @@ body {
     color: #fbf4f6;
     font-family: GochiHand-Regular;
     font-size: 24px;
+}
+
+img {
+    height: 300px;
+    width: 200px;
+    padding-right: 25px;
 }
 
 #typetotranslate {
