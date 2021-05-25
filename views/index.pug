@@ -2,12 +2,14 @@ doctype html
 html(lang="en")
     head
         title Pig Latin Translator
-    body 
-        h1 Pig Latin Translator
-        if translation 
-            h3 #{translation}
-        form(action='/', method="post")
-            div 
-                label(for="tobetranslated")
-                input(type="text", name="tobetranslated")
-            input(type="submit")
+        link(rel='stylesheet', href='/static/stylesheets/style.css')
+    body
+        div#inner_container
+            h1 Pig Latin Translator
+            if translation 
+                h1 #{translation}
+            form(action='/', method="post")
+                div 
+                    label(for="tobetranslated")
+                    input(type="text", name="tobetranslated")
+                input.submit(type="submit")
