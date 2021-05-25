@@ -22,7 +22,10 @@ router.post('/', asyncHandler(async(req, res) => {
         console.log(textToTranslate);
         let translatedText = igpayAtinlay(textToTranslate);
         console.log(translatedText);
-        res.render('index', { translation: translatedText})
+        res.render('index', {
+            "translation": translatedText,
+            "totranslate": textToTranslate
+        })
     } catch (error) {
         throw error;
     }
