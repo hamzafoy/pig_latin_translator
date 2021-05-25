@@ -55,6 +55,11 @@ img {
 
 input[type="text"] {
     background-color: #e4d3e0;
+    background-image: url('../img/letter.svg');
+    background-size: 18px 18px;
+    background-position: 2px .5px;
+    background-repeat: no-repeat;
+    padding-left: 24px;
     width: 140px;
     transition: width 0.4s ease-in-out;
 }
