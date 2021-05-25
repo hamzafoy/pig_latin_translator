@@ -49,6 +49,7 @@ img {
 
 input[type="text"] {
     background-color: #fbf4f6;
+    width: 250px;
 }
   
 .submit {
