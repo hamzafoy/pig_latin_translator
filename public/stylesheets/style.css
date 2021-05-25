@@ -23,24 +23,30 @@ body {
     border-radius: 33% 0;
     box-shadow: 12px 12px 2px 1px #c098b7;
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #inner_container h1 {
     color: #fbf4f6;
     font-family: GochiHand-Regular;
-    font-size: 44px;
+    font-size: 54px;
+    margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 #inner_container h3 {
     color: #fbf4f6;
     font-family: GochiHand-Regular;
-    font-size: 24px;
+    font-size: 28px;
+    margin-block-start: 0;
 }
 
 img {
     height: 300px;
-    width: 200px;
-    padding-right: 25px;
+    width: 175px;
+    padding-right: 30px;
+    padding-left: 12px;
 }
 
 #typetotranslate {
@@ -48,8 +54,15 @@ img {
 }
 
 input[type="text"] {
-    background-color: #fbf4f6;
-    width: 250px;
+    background-color: #e4d3e0;
+    width: 140px;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type="text"]:focus {
+    background-color: #c0dfdf;
+    border: none;
+    width: 215px;
 }
   
 .submit {
