@@ -6,6 +6,7 @@ function igpayAtinlay(input) {
     let pigLatinSentence = sentenceInput.split(' ');
     let pigLatinSentenceBroken = pigLatinSentence.map(word => {
         let x = [...word];
+        console.log(x);
         //The `w` variable can be deleted, replace `w` in the following FOR LOOP with `x`. The `w` variable is the filter removing punctuation to ensure proper translation.
         let w = x.filter(letter => {
             if (letter === ',' || letter === '.' || letter === "'") {
@@ -49,6 +50,8 @@ function igpayAtinlay(input) {
     
     return renderedPigLatinSentence;
 };
+
+console.log(igpayAtinlay('Amazon, Hamza, Troy'));
 
 
 module.exports.igpayAtinlay = igpayAtinlay;
